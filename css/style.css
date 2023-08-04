@@ -1,0 +1,91 @@
+@font-face {
+  font-family: DMserifDisplay;
+  font-weight: 400;
+  src: url(../assets/fonts/DMSerifDisplay-Regular.ttf);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;1,400&display=swap");
+
+:root {
+  --primary-color: #cda274;
+  --dark-color: #292f36;
+  --light-color: #f4f0ec;
+  --line-color:#f9f4ef;
+
+  /* Dynamic height */
+  --navbar-height: 0;
+  --start-point: 0;
+  --end-point: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Jost", sans-serif;
+  color: var(--dark-color);
+}
+
+img,
+picture,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.headindfont {
+  font-family: DMserifDisplay;
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 10px;
+}
+
+
+@media screen and (min-width: 510px) and (max-width: 900px) {
+  .container {
+    padding-inline: 2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  
+}
+
+@media screen and (max-width: 500px) {
+ 
+}
